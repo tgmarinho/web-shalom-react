@@ -1,0 +1,9 @@
+
+.link-no-effect {
+    /* nounderline:link  */
+    { 
+    text-decoration:none; 
+    } 
+
+}
+
