@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Link} from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 
@@ -29,7 +29,7 @@ class Navigator extends Component {
     //     $("#sidebar-wrapper").toggleClass("active");
     // });
 
-    handleMenuToggle = (e) => {
+    handleMenuToggle = async (e) => {
         e.preventDefault();
         this.state.menuToggle === 'active' ? (this.setState(() => {
             this.setState({ menuToggle: '' })
@@ -38,8 +38,7 @@ class Navigator extends Component {
         }))
     }
 
-    handleMenuClose = (e) => {
-        console.log('menuToggle', this.state.menuToggle)
+     handleMenuClose = async (e) => {
         e.preventDefault();
         this.setState(() => {
             this.setState({ menuToggle: '' })
@@ -59,7 +58,7 @@ class Navigator extends Component {
                         <ul className='sidebar-nav'>
                             <a id='menu-close' onClick={this.handleMenuClose} href='#' className='btn btn-light btn-lg pull-right toggle'><i className='fa fa-times'></i></a>
                             <li className='sidebar-brand'>
-                                <Link to='/' onClick={this.handleMenuClose} >SHALOM</Link>
+                                <Link to='#top' onClick={this.handleMenuClose} >SHALOM</Link>
                             </li>
                             <li >
                                 <Link to='#top' onClick={this.handleMenuClose}>Início</Link>
