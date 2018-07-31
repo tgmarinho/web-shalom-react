@@ -1,46 +1,98 @@
-import React from 'react'
-import * as $ from 'jquery'
+import React, { Component } from 'react'
+import { BrowserRouter as Router, Route, Link} from "react-router-dom";
 
 
 
-const Navigator = props => {
-    return (
-        <div>
-            <a id='menu-toggle' href='#' className='btn btn-dark btn-lg toggle'><i className='fa fa-bars'></i></a>
-            <nav id='sidebar-wrapper'>
-                <ul className='sidebar-nav'>
-                    <a id='menu-close' href='#' className='btn btn-light btn-lg pull-right toggle'><i className='fa fa-times'></i></a>
-                    <li className='sidebar-brand'>
-                        <a href='#top' onClick={$("#menu-close").click()}>SHALOM</a>
-                    </li>
-                    <li>
-                        <a href='#top'>Início</a>
-                    </li>
-                    <li>
-                        <a href='#sobre'>Sobre</a>
-                    </li>
-                    <li>
-                        <a href='#ministerios'>Ministério</a>
-                    </li>
-                    <li>
-                        <a href='#agenda' className='calendar'>Agenda</a>
-                    </li>
-                    <li>
-                        <a href='#fotos'>Fotos</a>
-                    </li>
-                    <li>
-                        <a href='#contato'>Contato</a>
-                    </li>
-                    <li>
-                        <a href='%PUBLIC_URL%/ministerio/louvor/musica.html'>Músicas</a>
-                    </li>
-
-                </ul>
-            </nav>
 
 
-        </div>
-    )
+
+class Navigator extends Component {
+
+
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            menuToggle: ''
+        }
+    }
+
+
+    // Closes the sidebar menu
+    // $("#menu-close").click(function(e) {
+    //     e.preventDefault();
+    //     $("#sidebar-wrapper").toggleClass("active");
+    // });
+    // // Opens the sidebar menu
+    // $("#menu-toggle").click(function(e) {
+    //     e.preventDefault();
+    //     $("#sidebar-wrapper").toggleClass("active");
+    // });
+
+    handleMenuToggle = (e) => {
+        e.preventDefault();
+        this.state.menuToggle === 'active' ? (this.setState(() => {
+            this.setState({ menuToggle: '' })
+        })) : (this.setState(() => {
+            this.setState({ menuToggle: 'active' })
+        }))
+    }
+
+    handleMenuClose = (e) => {
+        console.log('menuToggle', this.state.menuToggle)
+        e.preventDefault();
+        this.setState(() => {
+            this.setState({ menuToggle: '' })
+        })
+
+    }
+
+
+
+
+    render() {
+        return (
+            <Router>
+                <div>
+                    <a id='menu-toggle' href='#' onClick={this.handleMenuToggle} className={'btn btn-dark btn-lg toggle'}><i className='fa fa-bars'></i></a>
+                    <nav id='sidebar-wrapper' className={this.state.menuToggle}>
+                        <ul className='sidebar-nav'>
+                            <a id='menu-close' onClick={this.handleMenuClose} href='#' className='btn btn-light btn-lg pull-right toggle'><i className='fa fa-times'></i></a>
+                            <li className='sidebar-brand'>
+                                <Link to='/' onClick={this.handleMenuClose} >SHALOM</Link>
+                            </li>
+                            <li >
+                                <Link to='#top' onClick={this.handleMenuClose}>Início</Link>
+                            </li>
+                            <li>
+                                <Link to='#sobre' onClick={this.handleMenuClose}>Sobre</Link>
+                            </li>
+                            <li>
+                                <Link to='#ministerios' onClick={this.handleMenuClose}>Ministério</Link>
+                            </li>
+                            <li>
+                                <Link to='#agenda' onClick={this.handleMenuClose}>agenda</Link>
+                            </li>
+                            <li>
+                                <Link to='#fotos' onClick={this.handleMenuClose}>Fotos</Link>
+                            </li>
+                            <li>
+                                <Link to='#contato' onClick={this.handleMenuClose}>Contato</Link>
+                            </li>
+                            <li>
+                                <a href='%PUBLIC_URL%/ministerio/louvor/musica.html'>Músicas</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+
+                </div >
+            </Router>
+        )
+
+    }
+
 }
 
 export default Navigator
