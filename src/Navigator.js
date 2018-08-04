@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 
@@ -51,8 +51,9 @@ class Navigator extends Component {
 
     render() {
         return (
-            <Router>
-                <div>
+            <div>
+
+
                     <a id='menu-toggle' href='#' onClick={this.handleMenuToggle} className={'btn btn-dark btn-lg toggle'}><i className='fa fa-bars'></i></a>
                     <nav id='sidebar-wrapper' className={this.state.menuToggle}>
                         <ul className='sidebar-nav'>
@@ -85,9 +86,9 @@ class Navigator extends Component {
                         </ul>
                     </nav>
 
+                   
+                </div>
 
-                </div >
-            </Router>
         )
 
     }
