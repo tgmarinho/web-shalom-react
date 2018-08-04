@@ -3,10 +3,14 @@ import React from 'react';
 const Photos = () => {
 
     return (
-
-
-
         <div>
+
+            <div class="container">
+                <br />
+                <br />
+                <br />
+            </div>
+
             <section id="fotos" className="portfolio">
                 <br />
                 <br />
