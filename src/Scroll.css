@@ -1,0 +1,4 @@
+/* Removing the border of the scrolls */
+::-webkit-scrollbar { 
+    display: none; 
+}

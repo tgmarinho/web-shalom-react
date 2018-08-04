@@ -1,14 +1,7 @@
 import React, { Component } from 'react'
-import { Link } from "react-router-dom";
-
-
-
-
-
+import { Link } from "react-router-dom"
 
 class Navigator extends Component {
-
-
 
     constructor(props) {
         super(props)
@@ -47,13 +40,9 @@ class Navigator extends Component {
     }
 
 
-
-
     render() {
         return (
             <div>
-
-
                     <a id='menu-toggle' href='#' onClick={this.handleMenuToggle} className={'btn btn-dark btn-lg toggle'}><i className='fa fa-bars'></i></a>
                     <nav id='sidebar-wrapper' className={this.state.menuToggle}>
                         <ul className='sidebar-nav'>
@@ -80,7 +69,7 @@ class Navigator extends Component {
                                 <Link to='#contato' onClick={this.handleMenuClose}>Contato</Link>
                             </li>
                             <li>
-                                <a href='%PUBLIC_URL%/ministerio/louvor/musica.html'>Músicas</a>
+                                <Link to='/musicas'>Músicas</Link>
                             </li>
 
                         </ul>

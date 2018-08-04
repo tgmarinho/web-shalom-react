@@ -5,7 +5,7 @@ const Photos = () => {
     return (
         <div>
 
-            <div class="container">
+            <div className="container">
                 <br />
                 <br />
                 <br />

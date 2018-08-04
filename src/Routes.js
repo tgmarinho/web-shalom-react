@@ -1,14 +1,19 @@
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './Home'
+import Musics from './Musics';
 
 export const Routes = () => (
-    <Switch>
-        
-      {/* <PrivateRoute exact path="/" component={TasksContainer} /> */}
-      {/* <Route path="/home" component={HomeContainer} /> */}
+
+    <Router>
+    <div>      
+      <Route exact path="/" component={Home} />
+      <Route  path="/musicas" component={Musics} />
       {/* <Route path="/login" component={LoginContainer} /> */}
       {/* <PrivateRoute path="/add" component={AddTaskContainer} /> */}
       {/* <PrivateRoute path="/edit/:_id" component={AddTaskContainer} /> */}
       {/* <PrivateRoute path="/profile" component={ProfileContainer} /> */}
-    </Switch>
+    </div>
+    </Router>
   );
+  
