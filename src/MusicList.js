@@ -5,7 +5,12 @@ const MusicList = ({ musics }) => {
     return (
         <div>
             {musics.map((music, i) => {
-                return <MusicCard key={i} videoId={music.videoId} name={music.name} artist={music.artist} />;
+                return <MusicCard 
+                        key={i}
+                        videoId={music.videoId}
+                        name={music.name} 
+                        artist={music.artist} 
+                      />;
             })}
         </div>
     );
