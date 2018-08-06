@@ -249,6 +249,11 @@ footer {
   right: 5px;
 }
 
+/* Removing the border of the scrolls */
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 
 /* Agenda - Google Calendar 
 
