@@ -4,16 +4,18 @@ import Footer from './Footer'
 import Scroll from './Scroll'
 import { topMusics } from './topMusics'
 import MusicList from './MusicList'
+import 'tachyons';
+
 
 const Musics = () => {
-    console.log('fui chamado e agora ')
+  
     return (
 
         <div>
             <NavBar />
 
-            <div className="container">
-                <h2>As músicas mais tocadas na Shalom</h2>
+            <div className="tc">
+                <h2 className="f1">As músicas mais tocadas na Shalom</h2>
                 <div>
                     <a href="https://www.youtube.com/watch?v=j4XERp65uAM&list=PLVmmUbMkc13WV-jnj8AcQO0Yek9mo4wp8" target="_BLANK">
                         Quer ouvir todas elas em sequência no  youtube? Clique aqui!
@@ -27,17 +29,15 @@ const Musics = () => {
 
                 </Scroll>
 
-                <div className="row">
-                    <div className="col-lg-8 offset-lg-2 text-center">
-                        <h3 className="section-heading text-white">
-                            <a href="https://www.youtube.com/watch?v=j4XERp65uAM&list=PLVmmUbMkc13WV-jnj8AcQO0Yek9mo4wp8" target="_BLANK">
-                                Quer ouvir todas elas em sequência no  youtube? Clique aqui!
+                <hr className="light" />
+                <div className="tc">
+                    <h3 className="f1">
+                        <a href="https://www.youtube.com/watch?v=j4XERp65uAM&list=PLVmmUbMkc13WV-jnj8AcQO0Yek9mo4wp8" target="_BLANK">
+                            Quer ouvir todas elas em sequência no  youtube? Clique aqui!
                             </a>
-                        </h3>
-                        <hr className="light" />
-                    </div>
+                    </h3>
+                    <hr className="light" />
                 </div>
-
 
             </div>
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import YouTube from 'react-youtube';
-import 'tachyons';
 
 const opts = {
     height: '345',
