@@ -4,15 +4,25 @@ import Home from "./Home";
 
 const NavBar = () => {
   return (
-    <header class="sans-serif">
+    <header className="sans-serif">
       {/* <div className="cover bg-left bg-center-l" style={{ backgroundImage: 'url(http://mrmrs.github.io/photos/u/011.jpg)' }}> */}
       <div className="bg-black-60 pb5 pb2-m pb3-l">
         <nav className="dt w-100 mw8 center">
           <div className="dtc w2 v-mid pa3">
-            <Link className="f3 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" to="/">SHALOM</Link>
+            <Link
+              className="f3 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
+              to="/"
+            >
+              Shalom
+            </Link>
           </div>
           <div className="dtc v-mid tr pa3">
-            <Link className="f3 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" to="/">Voltar</Link>
+            <Link
+              className="f3 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
+              to="/"
+            >
+              Voltar
+            </Link>
             {/* <a className="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="/">Pricing</a> */}
             {/* <a className="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="/">About</a> */}
             {/* <a className="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="/">Careers</a> */}
@@ -22,7 +32,6 @@ const NavBar = () => {
 
         {/* </div> */}
       </div>
-
     </header>
   );
 };

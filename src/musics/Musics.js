@@ -1,14 +1,13 @@
 import React from 'react'
-import NavBar from './NavBar'
-import Footer from './Footer'
-import Scroll from './Scroll'
+import NavBar from '../NavBar'
+import Footer from '../Footer'
+import Scroll from '../Scroll'
 import { topMusics } from './topMusics'
 import MusicList from './MusicList'
 import 'tachyons';
 
-
 const Musics = () => {
-  
+
     return (
 
         <div>
@@ -21,7 +20,6 @@ const Musics = () => {
                         Quer ouvir todas elas em sequência no  youtube? Clique aqui!
                     </a>
                 </div>
-
 
                 <Scroll>
 
