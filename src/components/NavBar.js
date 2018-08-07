@@ -18,14 +18,40 @@ const NavBar = () => {
           <div className="dtc v-mid tr pa3">
             <Link
               className="f3 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
-              to="/"
+              to="/palavra/equipe"
             >
-              Voltar
+              Palavra
             </Link>
-            {/* <a className="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="/">Pricing</a> */}
-            {/* <a className="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="/">About</a> */}
-            {/* <a className="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="/">Careers</a> */}
-            {/* <a className="f6 fw4 hover-white no-underline white-70 dib ml2 pv2 ph3 ba" href="/">Shalom</a> */}
+            <Link
+              className="f3 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
+              to="/louvor/equipe"
+            >
+              Louvor
+            </Link>
+            <Link
+              className="f3 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
+              to="/infantil/equipe"
+            >
+              Infantil
+            </Link>
+            <Link
+              className="f3 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
+              to="/lirio-dos-vales/equipe"
+            >
+              Lírio dos Vales
+            </Link>
+            <Link
+              className="f3 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
+              to="/meetup/equipe"
+            >
+              Meetup
+            </Link>
+            <Link
+              className="f3 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
+              to="/musicas"
+            >
+              Músicas
+            </Link>
           </div>
         </nav>
 
