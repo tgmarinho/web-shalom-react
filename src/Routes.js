@@ -1,13 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from "./Home";
+import Home from "./principal/Home";
 import Musics from "./musics/Musics";
+import Palavra from "./palavra/Palavra"
+import Louvor from "./Louvor/Louvor";
+import Infatil from "./intantil/Infantil";
 
 export const Routes = () => (
   <Router>
     <div>
       <Route exact path="/" component={Home} />
       <Route path="/musicas" component={Musics} />
+      <Route path="/palavra/equipe" component={Palavra} />
+      <Route path="/louvor/equipe" component={Louvor} />
+      <Route path="/infantil/equipe" component={Infatil} />
       {/* <Route path="/login" component={LoginContainer} /> */}
       {/* <PrivateRoute path="/add" component={AddTaskContainer} /> */}
       {/* <PrivateRoute path="/edit/:_id" component={AddTaskContainer} /> */}

@@ -1,7 +1,7 @@
 import React from 'react'
-import NavBar from '../NavBar'
-import Footer from '../Footer'
-import Scroll from '../Scroll'
+import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
+import Scroll from '../components/Scroll'
 import { topMusics } from './topMusics'
 import MusicList from './MusicList'
 import 'tachyons';
