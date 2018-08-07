@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 const Photos = () => {
   return (
@@ -60,9 +61,9 @@ const Photos = () => {
                 </div>
               </div>
               {/* /.row (nested) */}
-              <a href="/fotos/galeria.html" className="btn btn-dark">
+              <Link to="/fotos" className="btn btn-dark">
                 Veja Mais Fotos
-              </a>
+              </Link>
             </div>
             {/* /.col-lg-10 */}
           </div>
