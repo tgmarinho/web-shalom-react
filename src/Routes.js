@@ -7,6 +7,7 @@ import Louvor from "./Louvor/Louvor";
 import Infatil from "./intantil/Infantil";
 import Lirio from "./lirio-dos-vales/Lirio";
 import Meetup from "./meetup/Meetup";
+import Galeria from "./fotos/Galeria";
 
 export const Routes = () => (
   <Router>
@@ -18,9 +19,8 @@ export const Routes = () => (
       <Route path="/infantil/equipe" component={Infatil} />
       <Route path="/lirio-dos-vales/equipe" component={Lirio} />
       <Route path="/meetup" component={Meetup} />
-      {/* <PrivateRoute path="/add" component={AddTaskContainer} /> */}
-      {/* <PrivateRoute path="/edit/:_id" component={AddTaskContainer} /> */}
-      {/* <PrivateRoute path="/profile" component={ProfileContainer} /> */}
+      <Route path="/fotos" component={Galeria} />
+  
     </div>
   </Router>
 );

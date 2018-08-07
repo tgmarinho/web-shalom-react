@@ -22,7 +22,7 @@ const Services = () => {
                       <strong>Palavra</strong>
                     </h4>
                     <p>Pra. Lia Oliveira e Silva</p>
-                    <Link to="/louvor/palavra" className="btn btn-light">
+                    <Link to="/palavra/equipe" className="btn btn-light">
                       Equipe
                     </Link>
                   </div>
