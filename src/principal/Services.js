@@ -134,12 +134,12 @@ const Services = () => {
                       <strong>Lírio dos Vale</strong>
                     </h4>
                     <p>Alexandrina e Ivone</p>
-                    <a
-                      href="%PUBLIC_URL%/ministerio/lirio-dos-vales/equipe.html"
+                    <Link
+                      to="/lirio-dos-vales/equipe"
                       className="btn btn-light"
                     >
-                      Leia mais
-                    </a>
+                      Equipe
+                    </Link>
                   </div>
                 </div>
                 <div className="col-md-3 col-sm-6">
@@ -152,12 +152,9 @@ const Services = () => {
                       <strong>Meetup</strong>
                     </h4>
                     <p>Jovens</p>
-                    <a
-                      href="%PUBLIC_URL%/ministerio/meetup/equipe.html"
-                      className="btn btn-light"
-                    >
-                      Leia mais
-                    </a>
+                    <Link to="/meetup/equipe" className="btn btn-light">
+                      Equipe
+                    </Link>
                   </div>
                 </div>
               </div>

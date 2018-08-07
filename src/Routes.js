@@ -5,6 +5,8 @@ import Musics from "./musics/Musics";
 import Palavra from "./palavra/Palavra"
 import Louvor from "./Louvor/Louvor";
 import Infatil from "./intantil/Infantil";
+import Lirio from "./lirio-dos-vales/Lirio";
+import Meetup from "./meetup/Meetup";
 
 export const Routes = () => (
   <Router>
@@ -14,7 +16,8 @@ export const Routes = () => (
       <Route path="/palavra/equipe" component={Palavra} />
       <Route path="/louvor/equipe" component={Louvor} />
       <Route path="/infantil/equipe" component={Infatil} />
-      {/* <Route path="/login" component={LoginContainer} /> */}
+      <Route path="/lirio-dos-vales/equipe" component={Lirio} />
+      <Route path="/meetup" component={Meetup} />
       {/* <PrivateRoute path="/add" component={AddTaskContainer} /> */}
       {/* <PrivateRoute path="/edit/:_id" component={AddTaskContainer} /> */}
       {/* <PrivateRoute path="/profile" component={ProfileContainer} /> */}

@@ -31,7 +31,7 @@ const Footer = () => {
                                 </li>
                             </ul>
                             <hr className="small" />
-                            <p className="text-muted">Copyright © 2017 - <a href="http://github.com/tgmarinho" target="_BLANK">@tgmarinho</a> </p>
+                            <p className="text-muted">Copyright © 2017 - <a href="http://tgmarinho.com" target="_BLANK">@tgmarinho</a> </p>
                         </div>
                     </div>
                 </div>
