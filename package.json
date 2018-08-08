@@ -8,6 +8,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-reveal": "^1.2.2",
+    "react-router-hash-link": "^1.2.0",
     "react-scripts": "1.1.4",
     "react-youtube": "^7.6.0",
     "rimraf": "^2.6.2"

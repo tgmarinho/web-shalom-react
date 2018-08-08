@@ -9,7 +9,7 @@ class Navigator extends Component {
             menuToggle: ''
         }
     }
-
+//TODO use this https://github.com/rafrex/react-router-hash-link
 
     // Closes the sidebar menu
     // $("#menu-close").click(function(e) {
