@@ -76,46 +76,7 @@ const Galeria = () => {
                                 <img className="img-fluid img-thumbnail" src="/img/galeria/11.jpg" alt />
                             </a>
                         </div>
-                        <div className="col-lg-3 col-md-4 col-xs-6">
-                            <a href="#" className="d-block mb-4 h-100">
-                                <img className="img-fluid img-thumbnail" src="/img/galeria/11.jpg" alt />
-                            </a>
-                        </div>
-                        <div className="col-lg-3 col-md-4 col-xs-6">
-                            <a href="#" className="d-block mb-4 h-100">
-                                <img className="img-fluid img-thumbnail" src="/img/galeria/11.jpg" alt />
-                            </a>
-                        </div>
-                        <div className="col-lg-3 col-md-4 col-xs-6">
-                            <a href="#" className="d-block mb-4 h-100">
-                                <img className="img-fluid img-thumbnail" src="/img/galeria/11.jpg" alt />
-                            </a>
-                        </div>
-                        <div className="col-lg-3 col-md-4 col-xs-6">
-                            <a href="#" className="d-block mb-4 h-100">
-                                <img className="img-fluid img-thumbnail" src="/img/galeria/11.jpg" alt />
-                            </a>
-                        </div>
-                        <div className="col-lg-3 col-md-4 col-xs-6">
-                            <a href="#" className="d-block mb-4 h-100">
-                                <img className="img-fluid img-thumbnail" src="/img/galeria/11.jpg" alt />
-                            </a>
-                        </div>
-                        <div className="col-lg-3 col-md-4 col-xs-6">
-                            <a href="#" className="d-block mb-4 h-100">
-                                <img className="img-fluid img-thumbnail" src="/img/galeria/11.jpg" alt />
-                            </a>
-                        </div>
-                        <div className="col-lg-3 col-md-4 col-xs-6">
-                            <a href="#" className="d-block mb-4 h-100">
-                                <img className="img-fluid img-thumbnail" src="/img/galeria/11.jpg" alt />
-                            </a>
-                        </div>
-                        <div className="col-lg-3 col-md-4 col-xs-6">
-                            <a href="#" className=" mb-4 h-100">
-                                <img className="img-fluid img-thumbnail" src="/img/galeria/11.jpg" alt />
-                            </a>
-                        </div>
+                        
                         
                         <div className="container">
                             <a href="https://www.facebook.com/pg/avivamentoshalom/photos/" target="_BLANK" className="btn btn-dark">+ Fotos</a>

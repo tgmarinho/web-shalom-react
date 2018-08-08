@@ -7,7 +7,7 @@ const Calendar = () => {
         <div id="agenda" className="map">
             <br />
             <div className="col-lg-12 text-center">
-                <a href="%PUBLIC_URL%/agenda.html" target="_blank"><h2>NOSSA AGENDA</h2></a>
+                <a href="/agenda.html" target="_blank"><h2>NOSSA AGENDA</h2></a>
                 <p className="lead">Seja bem vindos em nossas programações!</p>
                 <a href="https://calendar.google.com/calendar/embed?src=avivamentoshalom%40gmail.com&ctz=America/Campo_Grande" style={{ border: 0 }} width={800} height={600} frameBorder={0} scrolling="no" target="_blank">Veja em uma nova guia em tela cheia!</a>
             </div>
