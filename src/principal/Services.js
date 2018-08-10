@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-import Flash from 'react-reveal'
+import Fade from 'react-reveal'
 
 const Services = () => {
   return (
     <Fragment>
-      <Flash>
+      <Fade duration={5000}>
         {/* The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ */}
         <section id="ministerios" className="services bg-primary">
           <div className="container">
@@ -168,7 +168,7 @@ const Services = () => {
           </div>
           {/* /.container */}
         </section>
-      </Flash>
+      </Fade>
     </Fragment>
   );
 };
