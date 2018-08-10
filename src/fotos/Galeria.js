@@ -1,8 +1,7 @@
 import React from 'react'
+import Fade from "react-reveal/Fade";
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import Scroll from '../components/Scroll';
-
 
 const Galeria = () => {
 
@@ -12,8 +11,8 @@ const Galeria = () => {
             <NavBar />
 
             <div className="container">
-                <h1 className="my-4 text-center text-lg-left">Galeria de Fotos da Shalom</h1>
-                <Scroll>
+                <Fade duration={4000}>
+                    <h1 className="my-4 text-center text-lg-left">Galeria de Fotos da Shalom</h1>
 
                     <div className="row text-center text-lg-left">
                         <div className="col-lg-3 col-md-4 col-xs-6">
@@ -76,16 +75,17 @@ const Galeria = () => {
                                 <img className="img-fluid img-thumbnail" src="/img/galeria/11.jpg" alt />
                             </a>
                         </div>
-                        
-                        
+
                         <div className="container">
                             <a href="https://www.facebook.com/pg/avivamentoshalom/photos/" target="_BLANK" className="btn btn-dark">+ Fotos</a>
                         </div>
                     </div>
-                </Scroll>
+                </Fade>
             </div>
 
-            <Footer />
+            <Fade duration={3000}>
+                <Footer />
+            </Fade>
         </div>
 
     )
