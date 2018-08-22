@@ -1,5 +1,5 @@
 import React from 'react'
-import Navigator from "./Navigator";
+import NavBar from "../components/NavBar";
 import Header from "../components/Header";
 import About from "./About";
 import Services from "./Services";
@@ -12,13 +12,14 @@ const Home = () => {
 
     return (
         <div>
-            <Navigator />
+            <NavBar />
             <Header />
             <About />
             <Services />
             <Calendar />
             <Photos />
-            <Map />
+            <Map containerElement={<div style={{ height: `500px`, width: '500px' }} />}
+                mapElement={<div style={{ height: `100%` }} />} />
             <Footer />
         </div>
     )

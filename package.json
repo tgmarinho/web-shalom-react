@@ -4,10 +4,15 @@
   "private": true,
   "homepage": "https://avivashalom.com",
   "dependencies": {
+    "antd": "^3.8.2",
+    "babel-plugin-import": "^1.8.0",
     "firebase": "^5.3.1",
     "gh-pages": "^1.2.0",
     "react": "^16.4.1",
+    "react-app-rewire-less": "^2.1.2",
+    "react-app-rewired": "^1.5.2",
     "react-dom": "^16.4.1",
+    "react-image-gallery": "^0.8.10",
     "react-reveal": "^1.2.2",
     "react-router-hash-link": "^1.2.0",
     "react-scripts": "1.1.4",
@@ -19,9 +24,9 @@
     "clear": "rimraf build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
