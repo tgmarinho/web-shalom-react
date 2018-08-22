@@ -1,9 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
 import MusicCard from "./MusicCard";
 
 const MusicList = ({ musics }) => {
     return (
-        <div>
+        <Fragment>
+          
             {musics.map((music, i) => {
                 return <MusicCard 
                         key={i}
@@ -12,7 +13,7 @@ const MusicList = ({ musics }) => {
                         artist={music.artist} 
                       />;
             })}
-        </div>
+        </Fragment>
     );
 };
 

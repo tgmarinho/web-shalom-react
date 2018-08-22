@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom'
+import { Fade } from 'react-reveal';
 
 const Photos = () => {
   return (
@@ -19,46 +20,56 @@ const Photos = () => {
               <h2>Fotos</h2>
               <hr className="small" />
               <div className="row">
-                <div className="col-md-6">
-                  <div className="portfolio-item">
-                    <a href="#">
-                      <img
-                        className="img-portfolio img-responsive"
-                        src="img/church/5.jpg"
-                      />
-                    </a>
+                <Fade left>
+
+                  <div className="col-md-6">
+                    <div className="portfolio-item">
+                      <a href="#">
+                        <img
+                          className="img-portfolio img-responsive"
+                          src="img/church/5.jpg"
+                        />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="portfolio-item">
-                    <a href="#">
-                      <img
-                        className="img-portfolio img-responsive"
-                        src="img/church/4.jpg"
-                      />
-                    </a>
+
+                </Fade>
+                <Fade right>
+                  <div className="col-md-6">
+                    <div className="portfolio-item">
+                      <a href="#">
+                        <img
+                          className="img-portfolio img-responsive"
+                          src="img/church/4.jpg"
+                        />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="portfolio-item">
-                    <a href="#">
-                      <img
-                        className="img-portfolio img-responsive"
-                        src="img/church/8.jpg"
-                      />
-                    </a>
+                </Fade>
+                <Fade left>
+                  <div className="col-md-6">
+                    <div className="portfolio-item">
+                      <a href="#">
+                        <img
+                          className="img-portfolio img-responsive"
+                          src="img/church/8.jpg"
+                        />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="portfolio-item">
-                    <a href="#">
-                      <img
-                        className="img-portfolio img-responsive"
-                        src="img/church/9.jpg"
-                      />
-                    </a>
+                </Fade>
+                <Fade right>
+                  <div className="col-md-6">
+                    <div className="portfolio-item">
+                      <a href="#">
+                        <img
+                          className="img-portfolio img-responsive"
+                          src="img/church/9.jpg"
+                        />
+                      </a>
+                    </div>
                   </div>
-                </div>
+                </Fade>
               </div>
               {/* /.row (nested) */}
               <Link to="/fotos" className="btn btn-dark">
