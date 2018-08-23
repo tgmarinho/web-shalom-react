@@ -11,18 +11,17 @@ const FormItem = Form.Item;
 
 class Lyrics extends Component {
     state = {
-        piece: "",
-        lyrics: ""
+        piece: '',
+        lyrics: ''
     };
 
     handleOnChange = event => {
         const piece = event.target.value;
-        this.setState({ lyrics: "" });
+        this.setState({lyrics: '' });
         // Não permitir ir na API para buscar uma palavra tão irrelevante com quatro caracteres apenas
-        if (piece.length <= 4 || piece.trim() === '' ) {
+        if (piece.length <= 4 || piece.trim() === '') {
             return;
-        }
-
+        }   
         this.setState({ piece });
         this.showLyrics();
     };
@@ -45,7 +44,7 @@ class Lyrics extends Component {
                         <p>
                             Digite o nome da música ou parte da letra, ou ainda o nome do cantor, e ela aparece para
                             você! =)
-            </p>
+                        </p>
                         <p>Todo ser que respira, louve, louve ao Senhor!</p>
                     </Pulse>
 
@@ -58,10 +57,7 @@ class Lyrics extends Component {
                                 placeholder="digite o nome da música..."
                                 onChange={this.handleOnChange}
                             />
-
-                            {this.state.piece && (
-                                <TextArea autosize value={this.state.lyrics} />
-                            )}
+                                <TextArea hidden={this.state.piece.trim() === ''} autosize value={this.state.lyrics} />
                         </FormItem>
                     </Form>
                 </div>

@@ -13,7 +13,7 @@ const getLyricsById = async id => {
       return gotLyric;
     })
     .catch(error => {
-      console.log("error_getLyricsById", error);
+    //   console.log("error_getLyricsById", error);
     });
 };
 
@@ -27,6 +27,6 @@ export const getLyricsByPiece = async piece => {
       return getLyricsById(musicId);
     })
     .catch(error => {
-      console.log("error_getLyricsByTrecho", error);
+    //   console.log("error_getLyricsByTrecho", error);
     });
 };
