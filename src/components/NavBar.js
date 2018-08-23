@@ -60,6 +60,12 @@ const NavBar = () => {
             >
               Fotos
             </Link>
+            <Link
+              className="cabecalhoPrincipal-nav-link"
+              to="/letrasDasMusicas"
+            >
+              Vamos cantar
+            </Link>
           </nav>
         </div>
       </header>

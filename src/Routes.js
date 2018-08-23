@@ -8,6 +8,7 @@ import Infatil from "./intantil/Infantil";
 import Lirio from "./lirio-dos-vales/Lirio";
 import Meetup from "./meetup/Meetup";
 import Galeria from "./fotos/Galeria";
+import Lyrics from "./lyrics/Lyrics"
 
 export const Routes = () => (
   <Router>
@@ -20,6 +21,7 @@ export const Routes = () => (
       <Route path="/lirio-dos-vales/equipe" component={Lirio} />
       <Route path="/meetup" component={Meetup} />
       <Route path="/fotos" component={Galeria} />
+      <Route path="/letrasDasMusicas" component={Lyrics} />
   
     </div>
   </Router>
