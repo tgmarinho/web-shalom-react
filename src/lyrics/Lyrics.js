@@ -1,119 +1,130 @@
-import React, { Fragment } from "react";
+import React, { Component, Fragment } from "react";
 import axios from "axios";
 import Fade from "react-reveal/Fade";
 import NavBar from "../components/NavBar";
 import Pulse from "react-reveal/Pulse";
 import Footer from "../components/Footer";
 
+import { Input, Form } from 'antd';
 
+const { Search, TextArea } = Input;
+
+const FormItem = Form.Item;
 
 const key = "0efde0cb9c9f9dde0f3b8be3251063f0";
 
-// const getLyrics = () => {
-//     // Exemplo de requisição
-//     let artist = "Vineyard";
-//     let song = "Quebrantado";
 
-//     const query = `https://api.vagalume.com.br/search.php?art=${artist}&mus=${song}&apikey=${key}`
-
-//     axios
-//         .get(query)
-//         .then(data => {
-//             console.log("reponse", data);
-//             console.log({ data });
-//             alert(data.data.mus[0].text)
-//         })
-//         .catch(error => {
-//             console.log("error", error);
-//         });
-// };
-
-
-const getLyricsById = (id) => {
+const getLyricsById = async (id) => {
 
     const queryById = `https://api.vagalume.com.br/search.php?musid=${id}&apikey=${key}`
 
 
-    axios
-    .get(
-        queryById
-    )
-    .then(data => {
-        console.log("getLyricsById", data);
-        console.log({ data });
-        alert(data.data.mus[0].text)
-    })
-    .catch(error => {
-        console.log("error", error);
-    });
+    return await axios
+        .get(
+            queryById
+        )
+        .then(data => {
+            console.log("getLyricsById", data);
+            console.log({ data });
+            // alert(data.data.mus[0].text)
+            return data.data.mus[0].text;
+        })
+        .catch(error => {
+            console.log("error", error);
+        });
 
 }
 
-const getLyricsByTrecho = () => {
+const getLyricsByTrecho = async (trecho) => {
 
-    let trecho = "pra sempre avivah"
-
-    
     const queryByTrecho = `https://api.vagalume.com.br/search.excerpt?q=${trecho}&extra=relmus&apikey=${key}`
 
-    // const queryByTrecho2 = `https://api.vagalume.com.br/search.artmus?q=${trecho}&apikey=${key}`
-
-    // https://api.vagalume.com.br/search.artmus?q=Skank%20Vamos%20Fugir&limit=5
-
-// URL: https://api.vagalume.com.br/search.php?art=U2&mus=One&extra=relmus&nolyrics=1&apikey={key}
-
-    axios
+    return await axios
         .get(
             queryByTrecho
         )
         .then(data => {
-            console.log("reponse", data);
-            console.log({ data });
+            console.log("getLyricsByTrecho", data);
             console.log(data.data.response.docs[0].id)
-            getLyricsById(data.data.response.docs[0].id)
-            // alert(data.data.mus[0].text)
+            return getLyricsById(data.data.response.docs[0].id)
+
         })
         .catch(error => {
             console.log("error", error);
         });
 };
 
-const Lyrics = () => {
+class Lyrics extends Component {
 
-    return (
-        <Fragment>
-            <NavBar />
+    state = {
+        trecho: '',
+        letra: ''
+    }
 
-            {/* Page Content */}
-            <div className="tc">
-                {/* Introduction Row */}
-                <Pulse>
-                    <h1 className="my-4">
-                        ADORAÇÃO AO SENHOR
-            <small>Digno &amp; Santo És</small>
-                    </h1>
-                    <p>Equipe de Louvor da Shalom</p>
-                    <p>
-                        <a href="./musica.html"> As 20+ músicas tocadas na Shalom</a>
-                    </p>
-                </Pulse>
-                {/* Team Members Row */}
-                <div className="row">
-                    <div className="col-lg-12">
-                        <h2 className="my-4">Nossa equipe</h2>
-                    </div>
+    handleChange = event => {
+        console.log(event.target.value)
+        this.setState({ trecho: event.target.value });
+        this.showLetra()
+    };
+
+    showLetra = async () => {
+        console.log('entrei aqui')
+        const letra = await getLyricsByTrecho(this.state.trecho)
+        await console.log('letra buscada', letra)
+        this.setState({ letra });
+    };
+
+    render() {
+
+        const { classes } = this.props;
+
+
+        return (
+            <Fragment>
+                <NavBar />
+
+                {/* Page Content */}
+                <div className="tc">
+                    {/* Introduction Row */}
+                    <Pulse>
+                        <h1 className="my-4">
+                            VAMOS CANTAR
+                        </h1>
+                        <p>Digite um trecho da letra/cantor e a da música aparece para você</p>
+                        <p>Todo ser que respira, louve, louve ao Senhor!</p>
+
+                    </Pulse>
+
+                    <br /><br />
+
+                    <br /><br />
                 </div>
-            </div>
+                <div className="container">
+                    <Form layout="vertical">
 
-            { getLyricsByTrecho() }
+                        <FormItem>
+                            <Search
+
+                                placeholder="digite um trecho da música o nome do artista tbm"
+                                onChange={this.handleChange}
+                                // onPressEnter={this.showLetra}
+                            />
+                       
+                            <TextArea  autosize value={this.state.letra} />
+                        </FormItem>
+
+                    </Form>
+                </div>
+                {/* {getLyricsByTrecho()} */}
 
 
-            <Fade duration={3000}>
-                <Footer />
-            </Fade>
-        </Fragment>
+                <Fade duration={3000}>
+                    <Footer />
+                </Fade>
+            </Fragment>
 
-    );
+        );
+    }
 };
 
 export default Lyrics;
