@@ -1,50 +1,32 @@
 import axios from "axios";
-// import { notification } from "antd";
-
-// Notificação de erro
-// const openNotificationWithIcon = type => {
-//     notification[type]({
-//         message: "Falha ao buscar a letra",
-//         description:
-//             "Ops! Não foi possível buscar a letra da música."
-//     });
-// };
-
 
 // API Key do Vagalume
 const key = "0efde0cb9c9f9dde0f3b8be3251063f0";
 
 const getLyricsById = async id => {
-    const queryById = `https://api.vagalume.com.br/search.php?musid=${id}&apikey=${key}`;
+  const queryById = `https://api.vagalume.com.br/search.php?musid=${id}&apikey=${key}`;
 
-    return await axios
-        .get(queryById)
-        .then(data => {
-            // console.log("getLyricsById", data);
-            // console.log({ data });
-            // alert(data.data.mus[0].text)
-            const gotLyric = data.data.mus[0].text;
-            return gotLyric;
-        })
-        .catch(error => {
-            // openNotificationWithIcon('error')
-            console.log("error_getLyricsById", error);
-        });
+  return await axios
+    .get(queryById)
+    .then(data => {
+      const gotLyric = data.data.mus[0].text;
+      return gotLyric;
+    })
+    .catch(error => {
+      console.log("error_getLyricsById", error);
+    });
 };
 
 export const getLyricsByPiece = async piece => {
-    const queryByPiece = `https://api.vagalume.com.br/search.excerpt?q=${piece}&extra=relmus&apikey=${key}`;
+  const queryByPiece = `https://api.vagalume.com.br/search.excerpt?q=${piece}&extra=relmus&apikey=${key}`;
 
-    return await axios
-        .get(queryByPiece)
-        .then(data => {
-            //   console.log("getLyricsByPiece", data);
-            //   console.log(data.data.response.docs[0].id)
-            const musicId = data.data.response.docs[0].id;
-            return getLyricsById(musicId);
-        })
-        .catch(error => {
-            // openNotificationWithIcon('error')
-            console.log("error_getLyricsByTrecho", error);
-        });
+  return await axios
+    .get(queryByPiece)
+    .then(data => {
+      const musicId = data.data.response.docs[0].id;
+      return getLyricsById(musicId);
+    })
+    .catch(error => {
+      console.log("error_getLyricsByTrecho", error);
+    });
 };
