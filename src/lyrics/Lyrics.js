@@ -37,7 +37,11 @@ const getLyricsById = async (id) => {
 
 const getLyricsByTrecho = async (trecho) => {
 
+
+
     const queryByTrecho = `https://api.vagalume.com.br/search.excerpt?q=${trecho}&extra=relmus&apikey=${key}`
+
+
 
     return await axios
         .get(
@@ -61,14 +65,20 @@ class Lyrics extends Component {
         letra: ''
     }
 
-    handleChange = event => {
-        console.log(event.target.value)
-        this.setState({ trecho: event.target.value });
+    handleOnSubmit = event => {
+        event.preventDefault()
+        const trecho = event.target.idSearch.value
+        // Não permitir ir na API para buscar uma palavra tão simples
+        this.setState({ letra: 'Procurando...'})
+        if (trecho.length <= 3) {
+            return
+        }
+
+        this.setState({ trecho });
         this.showLetra()
     };
 
     showLetra = async () => {
-        console.log('entrei aqui')
         const letra = await getLyricsByTrecho(this.state.trecho)
         await console.log('letra buscada', letra)
         this.setState({ letra });
@@ -100,17 +110,14 @@ class Lyrics extends Component {
                     <br /><br />
                 </div>
                 <div className="container">
-                    <Form layout="vertical">
+                    <Form layout="vertical" onSubmit={this.handleOnSubmit}>
 
                         <FormItem>
-                            <Search
-
-                                placeholder="digite um trecho da música o nome do artista tbm"
-                                onChange={this.handleChange}
-                                // onPressEnter={this.showLetra}
+                            <Search id="idSearch"
+                                placeholder="digite um trecho da música..."
                             />
-                       
-                            <TextArea  autosize value={this.state.letra} />
+
+                          { this.state.trecho && <TextArea autosize value={this.state.letra} /> }
                         </FormItem>
 
                     </Form>
