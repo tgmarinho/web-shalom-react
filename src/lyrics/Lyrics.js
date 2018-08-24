@@ -74,7 +74,7 @@ class Lyrics extends Component {
               />
               <div className="container tc">
                 <br />
-                <Spin tip="Buscando..." hidden={this.state.loading} />
+                <Spin size="large" tip="Buscando..." hidden={this.state.loading} />
               </div>
             </FormItem>
           </Form>
