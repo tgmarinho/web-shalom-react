@@ -54,7 +54,7 @@ export const teamLouvor  = [
     {
         name: 'Dhiego Troquez',
         role: 'Baixo / Bateria / Violão',
-        photo: 'http://placehold.it/200x200'
+        photo: '/img/louvor/dhiego.jpg'
     }  
 
 ]                

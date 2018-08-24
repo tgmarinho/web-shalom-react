@@ -10,8 +10,8 @@ const Lirio = () => {
             <NavBar />
             <div className="container">
                 <Fade duration={4000}>
-                    <h1 className="my-4">Projeto Social
-      <small>Lírios dos Vale</small>
+                    <h1 className="my-4">Projeto Social  
+      <small> - Lírios dos Vale</small>
                     </h1>
                     <div className="row">
                         <div className="col-lg-6 portfolio-item">

@@ -18,8 +18,8 @@ const Louvor = () => {
         {/* Introduction Row */}
         <Pulse>
           <h1 className="my-4">
-            ADORAÇÃO AO SENHOR
-            <small>Digno &amp; Santo És</small>
+            ADORAÇÃO AO SENHOR 
+            <small> - Digno &amp; Santo És</small>
           </h1>
           <p>Equipe de Louvor da Shalom</p>
           <p>
