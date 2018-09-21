@@ -1,27 +1,34 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/)
+# Shalom - Single Page Application
 
-[Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/) is a responsive, one page portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). The theme features multiple content sections with an off canvas navigation menu.
+[WebSite - Check It out](https://avivashalom.com/)
 
-## Getting Started
+## Goals
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/stylish-portfolio/)
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio.git`
-* Fork the repo
+I created this SPA with the purpose to improve the identity of the church in WEB and communicate your services.
 
-## Bugs and Issues
+Check It out it running in:https://avivashalom.com
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/stylish-portfolio/).
+## Technologies / Stack
 
-## Creator
+Javascript, ES6/7, Create React App, React and React Router, Antd.
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+Nicely libs: react-image-gallery, react-reveal, react-youtube, gh-pages, antd, tachyons.
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+## Features
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+- [x] Home Page
+- [x] Ministers of Word
+- [x] Social Projects
+- [x] Meetups of Youngs and Teens
+- [x] Praise Team
+- [x] Lets to sing
 
-## Copyright and License
+## Authors
 
-Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/gh-pages/LICENSE) license.
+| ![Thiago Marinho](https://avatars2.githubusercontent.com/u/380327?s=150&v=3) |
+| :--------------------------------------------------------------------------: |
+|               [Thiago Marinho](https://github.com/tgmarinho/)                |
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
