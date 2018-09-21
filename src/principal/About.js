@@ -24,17 +24,16 @@ const About = () => {
                                 <p className="lead">Terça-feira 14h30 - Culto de Milagres</p>
                                 <p className="lead">Terça-feira 19h30 - Ensaio da Equipe de Louvor</p>
                                 <p className="lead">Quarta-feira 19h30 às 21h - Culto da Vitória</p>
-                                <p className="lead">Sexta-feira 20h - Oração e Vígilia</p>
+                                <p className="lead">3ª Quarta-feira do mês 14h - Culto no Lar dos Idosos</p>
 
                                 <h2>ENCONTROS</h2>
-                                <p className="lead">Sábado, uma vez por mês, Culto das Mulheres</p>
-                                <p className="lead">Sexta-feira - 19h, Célula Teens (Adolescentes</p>
-                                <p className="lead">Sábado - 18h, Meetup|JS (Jovens)</p>
+                                <p className="lead">Sábado - 19h, Meetup|JS (Jovens & Adolescentes)</p>
 
                                 <h2>CURSOS</h2>
                                 <p className="lead">Mulher Única</p>
                                 <p className="lead">Homem ao Máximo</p>
                                 <p className="lead">Casados para Sempre</p>
+                                <p className="lead">Crown - Finanças Pessoas</p>
                                 <p className="lead"><spam className="text-muted">Tem interesse, fale conosco para montarmos uma nova turma</spam></p>
 
                             </div>

@@ -26,42 +26,42 @@ const Infatil = () => {
                     <Fade left duration={2000}>
                         <div className="col-lg-6 portfolio-item">
                             <div className="card h-100">
-                                <a href="#"><img className="card-img-top" src="/img/infantil/kids1.jpg" alt /></a>
+                                <a href="#"><img className="card-img-top" src="/img/infantil/kids1.jpg" alt="" /></a>
                             </div>
                         </div>
                     </Fade>
                     <Fade right duration={2000}>
                         <div className="col-lg-6 portfolio-item">
                             <div className="card h-100">
-                                <a href="#"><img className="card-img-top" src="/img/infantil/kids2.jpg" alt /></a>
+                                <a href="#"><img className="card-img-top" src="/img/infantil/kids2.jpg" alt="" /></a>
                             </div>
                         </div>
                     </Fade>
                     <Fade left duration={2000}>
                         <div className="col-lg-6 portfolio-item">
                             <div className="card h-100">
-                                <a href="#"><img className="card-img-top" src="/img/infantil/kids3.jpg" alt /></a>
+                                <a href="#"><img className="card-img-top" src="/img/infantil/kids3.jpg" alt="" /></a>
                             </div>
                         </div>
                     </Fade>
                     <Fade right duration={2000}>
                         <div className="col-lg-6 portfolio-item">
                             <div className="card h-100">
-                                <a href="#"><img className="card-img-top" src="/img/infantil/kids4.jpg" alt /></a>
+                                <a href="#"><img className="card-img-top" src="/img/infantil/kids4.jpg" alt="" /></a>
                             </div>
                         </div>
                     </Fade>
                     <Fade left duration={2000}>
                         <div className="col-lg-6 portfolio-item">
                             <div className="card h-100">
-                                <a href="#"><img className="card-img-top" src="/img/infantil/kids5.jpg" alt /></a>
+                                <a href="#"><img className="card-img-top" src="/img/infantil/kids5.jpg" alt="" /></a>
                             </div>
                         </div>
                     </Fade>
                     <Fade right duration={2000}>
                         <div className="col-lg-6 portfolio-item">
                             <div className="card h-100">
-                                <a href="#"><img className="card-img-top" src="/img/infantil/kids6.jpg" alt /></a>
+                                <a href="#"><img className="card-img-top" src="/img/infantil/kids6.jpg" alt="" /></a>
                             </div>
                         </div>
                     </Fade>
