@@ -24,7 +24,7 @@ const NavBar = () => {
               className="cabecalhoPrincipal-nav-link"
               to="/lirio-dos-vales/equipe"
             >
-              Lírio dos Vales
+              Lírios do Vale
             </Link>
             {/* <Link
               className="cabecalhoPrincipal-nav-link"
