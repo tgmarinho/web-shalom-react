@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-import Fade from 'react-reveal'
+import Fade from "react-reveal";
 
 const Services = () => {
   return (
@@ -26,7 +26,7 @@ const Services = () => {
                       <p>Pra. Lia Oliveira e Silva</p>
                       <Link to="/palavra/equipe" className="btn btn-light">
                         Equipe
-                    </Link>
+                      </Link>
                     </div>
                   </div>
                   <div className="col-md-3 col-sm-6">
@@ -41,7 +41,7 @@ const Services = () => {
                       <p>Carla Suzana</p>
                       <Link to="/louvor/equipe" className="btn btn-light">
                         Equipe
-                    </Link>
+                      </Link>
                     </div>
                   </div>
                   <div className="col-md-3 col-sm-6">
@@ -56,7 +56,7 @@ const Services = () => {
                       <p>Hanay</p>
                       <Link to="/infantil/equipe" className="btn btn-light">
                         Equipe
-                    </Link>
+                      </Link>
                     </div>
                   </div>
                   <div className="col-md-3 col-sm-6">
@@ -71,7 +71,7 @@ const Services = () => {
                       <p>Silvana</p>
                       <a href="#" className="btn btn-light">
                         Equipe
-                    </a>
+                      </a>
                     </div>
                   </div>
                   <div className="col-md-3 col-sm-6">
@@ -141,10 +141,10 @@ const Services = () => {
                         className="btn btn-light"
                       >
                         Equipe
-                    </Link>
+                      </Link>
                     </div>
                   </div>
-                  <div className="col-md-3 col-sm-6">
+                  {/* <div className="col-md-3 col-sm-6">
                     <div className="service-item">
                       <span className="fa-stack fa-4x">
                         <i className="fa fa-circle fa-stack-2x" />
@@ -158,7 +158,7 @@ const Services = () => {
                         Equipe
                     </Link>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 {/* /.row (nested) */}
               </div>

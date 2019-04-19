@@ -1,39 +1,23 @@
 import React from "react";
-import './NavBar.css'
+import "./NavBar.css";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
-
   return (
     <div>
       <header className="cabecalhoPrincipal">
         <div className="container">
           <h1 className="cabecalhoPrincipal-titulo">
-            <Link
-              to="/"
-            >
-              Shalom
-            </Link>
-
+            <Link to="/">Shalom</Link>
           </h1>
           <nav className="cabecalhoPrincipal-nav">
-
-            <Link
-              className="cabecalhoPrincipal-nav-link"
-              to="/palavra/equipe"
-            >
+            <Link className="cabecalhoPrincipal-nav-link" to="/palavra/equipe">
               Palavra
             </Link>
-            <Link
-              className="cabecalhoPrincipal-nav-link"
-              to="/louvor/equipe"
-            >
+            <Link className="cabecalhoPrincipal-nav-link" to="/louvor/equipe">
               Louvor
             </Link>
-            <Link
-              className="cabecalhoPrincipal-nav-link"
-              to="/infantil/equipe"
-            >
+            <Link className="cabecalhoPrincipal-nav-link" to="/infantil/equipe">
               Infantil
             </Link>
             <Link
@@ -42,22 +26,16 @@ const NavBar = () => {
             >
               Lírio dos Vales
             </Link>
-            <Link
+            {/* <Link
               className="cabecalhoPrincipal-nav-link"
               to="/meetup/equipe"
             >
               Meetup
-            </Link>
-            <Link
-              className="cabecalhoPrincipal-nav-link"
-              to="/musicas"
-            >
+            </Link> */}
+            <Link className="cabecalhoPrincipal-nav-link" to="/musicas">
               Músicas
             </Link>
-            <Link
-              className="cabecalhoPrincipal-nav-link"
-              to="/fotos"
-            >
+            <Link className="cabecalhoPrincipal-nav-link" to="/fotos">
               Fotos
             </Link>
             <Link
@@ -70,10 +48,7 @@ const NavBar = () => {
         </div>
       </header>
     </div>
-
-
   );
-
 };
 
 export default NavBar;
