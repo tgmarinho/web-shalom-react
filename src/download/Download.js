@@ -61,7 +61,7 @@ class Download extends Component {
           <ul className="container">
             <li>
               <a
-                href="/downloads/Lições de preparativos para o Batismo - Shalom.pdf"
+                href="https://github.com/tgmarinho/web-shalom-react/raw/master/public/downloads/Li%C3%A7%C3%B5es%20de%20preparativos%20para%20o%20Batismo%20-%20Shalom.pdf"
                 target="_BLANK"
               >
                 Lições para classe de Batismo
@@ -69,14 +69,17 @@ class Download extends Component {
             </li>
             <br />
             <li>
-              <a href="/downloads/meusonho_pra_lia.jpg" target="_BLANK">
+              <a
+                href="https://github.com/tgmarinho/web-shalom-react/raw/master/public/downloads/meusonho_pra_lia.jpg"
+                target="_BLANK"
+              >
                 Meu sonho - Pra. Lia
               </a>
             </li>
             <br />
             <li>
               <a
-                href="/downloads/lia_vencendo_a_dor_com_jesus.jpg"
+                href="https://github.com/tgmarinho/web-shalom-react/raw/master/public/downloads/lia_vencendo_a_dor_com_jesus.jpg"
                 target="_BLANK"
               >
                 Vencendo a dor com Jesus - Testemunho Pra. Lia
@@ -85,7 +88,7 @@ class Download extends Component {
             <br />
             <li>
               <a
-                href="/downloads/Livro Semeadores - Mananciais do Sertão Nordestinos.pdf"
+                href="https://github.com/tgmarinho/web-shalom-react/raw/master/public/downloads/Livro%20Semeadores%20-%20Mananciais%20do%20Sert%C3%A3o%20Nordestinos.pdf"
                 target="_BLANK"
               >
                 Livro Semeadores - Mananciais do Sertão Nordestinos -
