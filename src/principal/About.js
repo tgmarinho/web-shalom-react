@@ -24,7 +24,8 @@ const About = () => {
                 </p>
                 <p className="lead">Domingo 19h - Culto Infantil</p>
                 <p className="lead">
-                  Segunda-feira 6h às 7h30 - Oração com os Atalaias
+                  Segunda-feira a Sexta-feira das 6h às 7h30 - Oração com os
+                  Atalaias
                 </p>
                 <p className="lead">
                   Segunda-feira 18h às 19h30 - Oração e Intercessão
@@ -39,7 +40,9 @@ const About = () => {
                 <p className="lead">
                   3ª Quarta-feira do mês 14h - Culto no Lar dos Idosos
                 </p>
-
+                <p className="lead">
+                  Aos Sábados - 14h30 - Escola de Música Teens
+                </p>
                 <h2>ENCONTROS</h2>
                 <p className="lead">Quarta-feira 19h30 às 21h - Meetup Teens</p>
 

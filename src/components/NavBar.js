@@ -26,17 +26,17 @@ const NavBar = () => {
             >
               Lírios do Vale
             </Link>
-            {/* <Link
-              className="cabecalhoPrincipal-nav-link"
-              to="/meetup/equipe"
-            >
+            <Link className="cabecalhoPrincipal-nav-link" to="/meetup/equipe">
               Meetup
-            </Link> */}
+            </Link>
             <Link className="cabecalhoPrincipal-nav-link" to="/musicas">
               Músicas
             </Link>
             <Link className="cabecalhoPrincipal-nav-link" to="/fotos">
               Fotos
+            </Link>
+            <Link className="cabecalhoPrincipal-nav-link" to="/download">
+              Download
             </Link>
             <Link
               className="cabecalhoPrincipal-nav-link"

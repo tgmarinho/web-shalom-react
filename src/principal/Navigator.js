@@ -112,9 +112,9 @@ class Navigator extends Component {
             <li>
               <Link to="/infantil/equipe">Ministério | Infatil</Link>
             </li>
-            {/* <li>
-                            <Link to='/meetup'>Ministério | Meetup</Link>
-                        </li> */}
+            <li>
+              <Link to="/meetup">Ministério | Meetup</Link>
+            </li>
             <li>
               <Link to="/fotos">Galeria de Fotos</Link>
             </li>

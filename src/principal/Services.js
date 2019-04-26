@@ -144,7 +144,7 @@ const Services = () => {
                       </Link>
                     </div>
                   </div>
-                  {/* <div className="col-md-3 col-sm-6">
+                  <div className="col-md-3 col-sm-6">
                     <div className="service-item">
                       <span className="fa-stack fa-4x">
                         <i className="fa fa-circle fa-stack-2x" />
@@ -153,12 +153,12 @@ const Services = () => {
                       <h4>
                         <strong>Meetup</strong>
                       </h4>
-                      <p>Jovens</p>
+                      <p>Teens</p>
                       <Link to="/meetup/equipe" className="btn btn-light">
                         Equipe
-                    </Link>
+                      </Link>
                     </div>
-                  </div> */}
+                  </div>
                 </div>
                 {/* /.row (nested) */}
               </div>
