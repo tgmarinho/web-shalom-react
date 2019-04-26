@@ -23,6 +23,8 @@ const Footer = () => {
                   Rua Duque de Caxias, 76
                   <br />
                   Vila Sulmat, Dourados/MS
+                  <br />
+                  CEP 79806-080
                 </p>
                 <p>
                   <strong>Conta Bancária: Sicoob</strong>
