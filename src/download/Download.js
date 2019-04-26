@@ -64,7 +64,7 @@ class Download extends Component {
                 href="/downloads/Lições de preparativos para o Batismo - Shalom.pdf"
                 target="_BLANK"
               >
-                Lições para preparar para o Batismo
+                Lições para classe de Batismo
               </a>
             </li>
             <br />
@@ -80,6 +80,16 @@ class Download extends Component {
                 target="_BLANK"
               >
                 Vencendo a dor com Jesus - Testemunho Pra. Lia
+              </a>
+            </li>
+            <br />
+            <li>
+              <a
+                href="/downloads/Livro Semeadores - Mananciais do Sertão Nordestinos.pdf"
+                target="_BLANK"
+              >
+                Livro Semeadores - Mananciais do Sertão Nordestinos -
+                Participação Pra. Lia
               </a>
             </li>
           </ul>
