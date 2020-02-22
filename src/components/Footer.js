@@ -64,14 +64,6 @@ const Footer = () => {
                       <i className="fa fa-youtube fa-fw fa-3x" />
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="https://chat.whatsapp.com/DQ1irY556cx5taDKAsGIRd"
-                      target="_BLANK"
-                    >
-                      <i className="fa fa-whatsapp fa-fw fa-3x" />
-                    </a>
-                  </li>
                 </ul>
                 <hr className="small" />
                 <p className="text-muted">
