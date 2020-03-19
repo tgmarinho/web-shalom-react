@@ -95,6 +95,7 @@ class Download extends Component {
                 Participação Pra. Lia
               </a>
             </li>
+            <br />
             <li>
               <a
                 href="https://github.com/tgmarinho/web-shalom-react/blob/master/public/downloads/ORACAO_DE_GUERRA_ESPIRITUAL.pdf"
@@ -103,6 +104,7 @@ class Download extends Component {
                 Oração de Guerra Espiritual
               </a>
             </li>
+            <br />
           </ul>
         </div>
 
