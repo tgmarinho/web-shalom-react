@@ -112,6 +112,22 @@ class Download extends Component {
           <small>Deus te abençoe</small>
         </div>
 
+        <div>
+          <iframe
+            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Favivamentoshalom%2Fvideos%2F1572808029538191%2F&width=400"
+            style={{
+              width: 400,
+              height: 400,
+              border: "none",
+              overflow: "hidden"
+            }}
+            scrolling="no"
+            frameborder="0"
+            allowTransparency="true"
+            allowFullScreen="true"
+          ></iframe>
+        </div>
+
         <Fade duration={3000}>
           <Footer />
         </Fade>
