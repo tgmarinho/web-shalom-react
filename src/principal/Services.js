@@ -122,7 +122,7 @@ const Services = () => {
                       <h4>
                         <strong>Áudio</strong>
                       </h4>
-                      <p>Caio, Eduardo e equipe</p>
+                      <p>Eduardo e equipe</p>
                       {/* <a href="#" class="btn btn-light">Leia mais</a> */}
                     </div>
                   </div>

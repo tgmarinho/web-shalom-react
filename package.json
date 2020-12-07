@@ -7,7 +7,6 @@
     "antd": "^3.8.2",
     "axios": "^0.18.0",
     "babel-plugin-import": "^1.8.0",
-    "gh-pages": "^1.2.0",
     "react": "^16.4.1",
     "react-app-rewire-less": "^2.1.2",
     "react-app-rewired": "^1.5.2",
@@ -23,7 +22,6 @@
   "scripts": {
     "clear": "rimraf build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
