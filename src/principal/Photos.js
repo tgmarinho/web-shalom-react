@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from 'react-router-dom'
-import { Fade } from 'react-reveal';
+import { Link } from "react-router-dom";
+import { Fade } from "react-reveal";
 
 const Photos = () => {
   return (
@@ -21,18 +21,17 @@ const Photos = () => {
               <hr className="small" />
               <div className="row">
                 <Fade left>
-
                   <div className="col-md-6">
                     <div className="portfolio-item">
                       <a href="#">
                         <img
+                          width="99%"
                           className="img-portfolio img-responsive"
                           src="img/church/5.jpg"
                         />
                       </a>
                     </div>
                   </div>
-
                 </Fade>
                 <Fade right>
                   <div className="col-md-6">

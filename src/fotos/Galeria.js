@@ -13,7 +13,7 @@ const Galeria = () => {
       </h1>
       <Photos />
       {/* <div className="container">
-                <a href="https://www.facebook.com/pg/avivamentoshalom/photos/" target="_BLANK" className="btn btn-dark">+ Fotos</a>
+                <a href="https://www.facebook.com/pg/avivamentoshalom/photos/" target="_blank" rel="noopener noreferrer" className="btn btn-dark">+ Fotos</a>
             </div> */}
       <Fade duration={3000}>
         <Footer />

@@ -18,7 +18,7 @@ const Louvor = () => {
         {/* Introduction Row */}
         <Pulse>
           <h1 className="my-4">
-            ADORAÇÃO AO SENHOR 
+            ADORAÇÃO AO SENHOR
             <small> - Digno &amp; Santo És</small>
           </h1>
           <p>Equipe de Louvor da Shalom</p>
@@ -27,7 +27,7 @@ const Louvor = () => {
           </p>
         </Pulse>
         {/* Team Members Row */}
-        <div className="row">
+        {/* <div className="row">
           <div className="col-lg-12">
             <h2 className="my-4">Nossa equipe</h2>
           </div>
@@ -44,7 +44,7 @@ const Louvor = () => {
               );
             })}
           </Fade>
-        </div>
+        </div> */}
 
         <FacaParte
           title="FAÇA PARTE"

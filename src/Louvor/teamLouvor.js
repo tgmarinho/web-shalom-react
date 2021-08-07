@@ -13,7 +13,7 @@ export const teamLouvor = [
   },
   {
     name: "Carla Suzana",
-    role: "Líder / Vocal",
+    role: "Vocal",
     photo: "/img/louvor/carla.jpg",
   },
   {
@@ -28,12 +28,7 @@ export const teamLouvor = [
   },
   {
     name: "Jamille Cruz",
-    role: "Vocal",
-    photo: "http://placehold.it/200x200",
-  },
-  {
-    name: "Silvana Maria",
-    role: "Vocal",
+    role: "Vocal e Teclado",
     photo: "http://placehold.it/200x200",
   },
   {

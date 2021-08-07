@@ -9,20 +9,23 @@ const About = () => {
           <div className="container">
             <div className="row">
               <div className="col-lg-12 text-center">
-                <h1>SHALOM</h1>
                 <h3>Igreja Batista do Avivamento Shalom</h3>
-                <h2>NOSSO TEMA!</h2>
+                <h2>NOSSO TEMA</h2>
                 <p className="lead">
-                  Haverá óh Shalom, estabilidade nos teus tempos, abundância de
-                  salvação, sabedoria e conhecimento; e o temor do Senhor será o
-                  seu tesouro. Isaías 33:6
+                  <i>
+                    Haverá óh Shalom, estabilidade nos teus tempos, abundância
+                    de salvação, sabedoria e conhecimento; e o temor do Senhor
+                    será o seu tesouro. Isaías 33:6
+                  </i>
                 </p>
 
                 <h2>CULTOS</h2>
                 <p className="lead">
                   Domingo 18h - Intercessão | 18h30 - Adoração e Palavra
                 </p>
-                <p className="lead">Domingo 19h - Culto Infantil</p>
+                <p className="lead">
+                  Domingo 19h (quinzenalmente) - Culto Kids/Teens
+                </p>
                 <p className="lead">
                   Segunda-feira a Sexta-feira das 6h às 7h30 - Oração com os
                   Atalaias
@@ -30,31 +33,31 @@ const About = () => {
                 <p className="lead">
                   Segunda-feira 18h às 19h30 - Oração e Intercessão
                 </p>
+                <p className="lead">
+                  Segunda-feira 19h30 - Ensaio da Equipe de Louvor
+                </p>
                 <p className="lead">Terça-feira 14h30 - Culto de Milagres</p>
+                <p className="lead">Quarta-feira às 19h30 - Culto da Vitória</p>
+                <p className="lead">Quarta-feira às 19h30 - Encontro Teens</p>
                 <p className="lead">
-                  Quarta-feira 19h30 às 21h - Culto da Vitória
+                  Sexta-feira às 19h - Oração e intercessão
                 </p>
                 <p className="lead">
-                  Sexta-feira 20h - Ensaio da Equipe de Louvor
+                  3ª Sexta-feira do mês 20h - Vigília Equipe de Louvor
                 </p>
                 <p className="lead">
-                  3ª Quarta-feira do mês 14h - Culto no Lar dos Idosos
+                  Aos Sábados - 14h - Escola de Música Teens
                 </p>
-                <p className="lead">
-                  Aos Sábados - 14h30 - Escola de Música Teens
-                </p>
-                <h2>ENCONTROS</h2>
-                <p className="lead">Quarta-feira 19h30 às 21h - Meetup Teens</p>
+                <p className="lead">Aos Sábados - 18h30 - Encontro Conexão</p>
 
                 <h2>CURSOS</h2>
                 <p className="lead">Mulher Única</p>
                 <p className="lead">Homem ao Máximo</p>
                 <p className="lead">Casados para Sempre</p>
-                <p className="lead">Crown - Finanças Pessoas</p>
+                <p className="lead">Crown - Finanças Pessoais</p>
+
                 <p className="lead">
-                  <spam className="text-muted">
-                    Tem interesse, fale conosco para montarmos uma nova turma
-                  </spam>
+                  <i>De Fé em Fé, de Glória em Glória!</i>
                 </p>
               </div>
             </div>

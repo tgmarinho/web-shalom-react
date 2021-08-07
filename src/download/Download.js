@@ -62,7 +62,8 @@ class Download extends Component {
             <li>
               <a
                 href="https://github.com/tgmarinho/web-shalom-react/raw/master/public/downloads/Li%C3%A7%C3%B5es%20de%20preparativos%20para%20o%20Batismo%20-%20Shalom.pdf"
-                target="_BLANK"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Lições para classe de Batismo
               </a>
@@ -71,7 +72,8 @@ class Download extends Component {
             <li>
               <a
                 href="https://github.com/tgmarinho/web-shalom-react/raw/master/public/downloads/meusonho_pra_lia.jpg"
-                target="_BLANK"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Meu sonho - Pra. Lia
               </a>
@@ -80,7 +82,8 @@ class Download extends Component {
             <li>
               <a
                 href="https://github.com/tgmarinho/web-shalom-react/raw/master/public/downloads/lia_vencendo_a_dor_com_jesus.jpg"
-                target="_BLANK"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Vencendo a dor com Jesus - Testemunho Pra. Lia
               </a>
@@ -89,7 +92,8 @@ class Download extends Component {
             <li>
               <a
                 href="https://github.com/tgmarinho/web-shalom-react/raw/master/public/downloads/Livro%20Semeadores%20-%20Mananciais%20do%20Sert%C3%A3o%20Nordestinos.pdf"
-                target="_BLANK"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Livro Semeadores - Mananciais do Sertão Nordestinos -
                 Participação Pra. Lia
@@ -99,7 +103,8 @@ class Download extends Component {
             <li>
               <a
                 href="https://github.com/tgmarinho/web-shalom-react/raw/master/public/downloads/ORACAO_DE_GUERRA_ESPIRITUAL.pdf"
-                target="_BLANK"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Oração de Guerra Espiritual
               </a>

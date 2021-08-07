@@ -15,7 +15,11 @@ const Footer = () => {
                   </strong>
                 </h4>
                 <span className="text-muted">
-                  <a href="https://goo.gl/maps/PRCvJ8rypt32" target="_BLANK">
+                  <a
+                    href="https://goo.gl/maps/PRCvJ8rypt32"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Visite-nos
                   </a>
                 </span>
@@ -33,7 +37,16 @@ const Footer = () => {
                   <br />
                   Conta: 11.494-4
                   <br />
-                  CNPJ: 03.549.481/0001-87
+                  PIX/CNPJ:{" "}
+                  <a href="#">
+                    <span
+                      onClick={() =>
+                        navigator.clipboard.writeText("03549481000187")
+                      }
+                    >
+                      03.549.481/0001-87
+                    </span>
+                  </a>
                 </p>
                 <ul className="list-unstyled">
                   <li>
@@ -51,15 +64,17 @@ const Footer = () => {
                   <li>
                     <a
                       href="https://www.facebook.com/avivamentoshalom/"
-                      target="_BLANK"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <i className="fa fa-facebook fa-fw fa-3x" />
                     </a>
                   </li>
                   <li>
                     <a
-                      href="https://www.youtube.com/channel/UCEunYWfZZUyRLiy0WxEErVw"
-                      target="_BLANK"
+                      href="https://www.youtube.com/channel/UC2wcGpgGrbr84Po3Xxly1Ag"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <i className="fa fa-youtube fa-fw fa-3x" />
                     </a>
@@ -67,8 +82,12 @@ const Footer = () => {
                 </ul>
                 <hr className="small" />
                 <p className="text-muted">
-                  Site desde 2017 - última atualização 26/04/2019 às 11h34 por{" "}
-                  <a href="http://tgmarinho.com" target="_BLANK">
+                  Site desde 2017 - última atualização 04/08/2021 às 10h por{" "}
+                  <a
+                    href="http://tgmarinho.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     @tgmarinho
                   </a>{" "}
                 </p>

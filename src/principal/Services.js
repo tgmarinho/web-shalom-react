@@ -23,10 +23,10 @@ const Services = () => {
                       <h4>
                         <strong>Palavra</strong>
                       </h4>
-                      <p>Pra. Lia Oliveira e Silva</p>
-                      <Link to="/palavra/equipe" className="btn btn-light">
+                      <p>Pra. Lia Oliveira e equipe</p>
+                      {/* <Link to="/palavra/equipe" className="btn btn-light">
                         Equipe
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                   <div className="col-md-3 col-sm-6">
@@ -38,10 +38,10 @@ const Services = () => {
                       <h4>
                         <strong>Louvor e Adoração</strong>
                       </h4>
-                      <p>Carla Suzana</p>
-                      <Link to="/louvor/equipe" className="btn btn-light">
+                      <p>Hanay e equipe</p>
+                      {/* <Link to="/louvor/equipe" className="btn btn-light">
                         Equipe
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                   <div className="col-md-3 col-sm-6">
@@ -53,10 +53,10 @@ const Services = () => {
                       <h4>
                         <strong>Infantil</strong>
                       </h4>
-                      <p>Hanay</p>
-                      <Link to="/infantil/equipe" className="btn btn-light">
+                      <p>Silvana e equipe</p>
+                      {/* <Link to="/infantil/equipe" className="btn btn-light">
                         Equipe
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                   <div className="col-md-3 col-sm-6">
@@ -66,12 +66,12 @@ const Services = () => {
                         <i className="fa fa-gamepad fa-stack-1x text-primary" />
                       </span>
                       <h4>
-                        <strong>Teen</strong>
+                        <strong>Teens</strong>
                       </h4>
-                      <p>Silvana</p>
-                      <a href="#" className="btn btn-light">
+                      <p>Dinamene e equipe</p>
+                      {/* <a href="#" className="btn btn-light">
                         Equipe
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                   <div className="col-md-3 col-sm-6">
@@ -83,7 +83,7 @@ const Services = () => {
                       <h4>
                         <strong>Universidade da Família</strong>
                       </h4>
-                      <p>Marily &amp; Wilson</p>
+                      <p>Marily e equipe</p>
                       {/* <a href="#" class="btn btn-light">Equipe</a> */}
                     </div>
                   </div>
@@ -96,7 +96,7 @@ const Services = () => {
                       <h4>
                         <strong>Introdução</strong>
                       </h4>
-                      <p>Marily &amp; Wilson equipe</p>
+                      <p>Marily</p>
                       {/* <a href="#" class="btn btn-light">Leia mais</a> */}
                     </div>
                   </div>
@@ -109,7 +109,7 @@ const Services = () => {
                       <h4>
                         <strong>Mídia</strong>
                       </h4>
-                      <p>Roberson, Thiago e equipe</p>
+                      <p>Roberson, Jacqueline e equipe</p>
                       {/* <a href="#" class="btn btn-light">Leia mais</a> */}
                     </div>
                   </div>
@@ -122,11 +122,11 @@ const Services = () => {
                       <h4>
                         <strong>Áudio</strong>
                       </h4>
-                      <p>Eduardo e equipe</p>
+                      <p>Felipe e equipe</p>
                       {/* <a href="#" class="btn btn-light">Leia mais</a> */}
                     </div>
                   </div>
-                  <div className="col-md-3 col-sm-6">
+                  {/* <div className="col-md-3 col-sm-6">
                     <div className="service-item">
                       <span className="fa-stack fa-4x">
                         <i className="fa fa-circle fa-stack-2x" />
@@ -143,8 +143,8 @@ const Services = () => {
                         Equipe
                       </Link>
                     </div>
-                  </div>
-                  <div className="col-md-3 col-sm-6">
+                  </div> */}
+                  {/* <div className="col-md-3 col-sm-6">
                     <div className="service-item">
                       <span className="fa-stack fa-4x">
                         <i className="fa fa-circle fa-stack-2x" />
@@ -158,7 +158,7 @@ const Services = () => {
                         Equipe
                       </Link>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 {/* /.row (nested) */}
               </div>

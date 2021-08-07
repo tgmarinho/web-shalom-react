@@ -5,7 +5,7 @@ class Navigator extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuToggle: ""
+      menuToggle: "",
     };
   }
   //TODO use this https://github.com/rafrex/react-router-hash-link
@@ -21,7 +21,7 @@ class Navigator extends Component {
   //     $("#sidebar-wrapper").toggleClass("active");
   // });
 
-  handleMenuToggle = async e => {
+  handleMenuToggle = async (e) => {
     e.preventDefault();
     this.state.menuToggle === "active"
       ? this.setState(() => {
@@ -32,7 +32,7 @@ class Navigator extends Component {
         });
   };
 
-  handleMenuClose = async e => {
+  handleMenuClose = async (e) => {
     e.preventDefault();
     this.setState(() => {
       this.setState({ menuToggle: "" });
@@ -98,23 +98,23 @@ class Navigator extends Component {
             <li>
               <Link to="/musicas">Músicas</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/palavra/equipe">Ministério | Palavra</Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link to="/louvor/equipe">Ministério | Louvor</Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link to="/lirio-dos-vales/equipe">
                 Ministério | Lírio dos Vales
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link to="/infantil/equipe">Ministério | Infatil</Link>
             </li>
             <li>
               <Link to="/meetup">Ministério | Meetup</Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/fotos">Galeria de Fotos</Link>
             </li>

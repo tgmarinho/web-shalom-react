@@ -11,7 +11,10 @@ const NavBar = () => {
             <Link to="/">Shalom</Link>
           </h1>
           <nav className="cabecalhoPrincipal-nav">
-            <Link className="cabecalhoPrincipal-nav-link" to="/palavra/equipe">
+            <Link className="cabecalhoPrincipal-nav-link" to="/">
+              Início
+            </Link>
+            {/* <Link className="cabecalhoPrincipal-nav-link" to="/palavra/equipe">
               Palavra
             </Link>
             <Link className="cabecalhoPrincipal-nav-link" to="/louvor/equipe">
@@ -28,7 +31,7 @@ const NavBar = () => {
             </Link>
             <Link className="cabecalhoPrincipal-nav-link" to="/meetup/equipe">
               Meetup
-            </Link>
+            </Link> */}
             <Link className="cabecalhoPrincipal-nav-link" to="/musicas">
               Músicas
             </Link>
