@@ -38,7 +38,6 @@ const About = () => {
                 </p>
                 <p className="lead">Terça-feira 14h30 - Culto de Milagres</p>
                 <p className="lead">Quarta-feira às 19h30 - Culto da Vitória</p>
-                <p className="lead">Quarta-feira às 19h30 - Encontro Teens</p>
                 <p className="lead">
                   Sexta-feira às 19h - Oração e intercessão
                 </p>
@@ -48,7 +47,6 @@ const About = () => {
                 <p className="lead">
                   Aos Sábados - 14h - Escola de Música Teens
                 </p>
-                <p className="lead">Aos Sábados - 18h30 - Encontro Conexão</p>
 
                 <h2>CURSOS</h2>
                 <p className="lead">Mulher Única</p>

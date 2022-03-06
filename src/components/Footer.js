@@ -50,9 +50,6 @@ const Footer = () => {
                 </p>
                 <ul className="list-unstyled">
                   <li>
-                    <i className="fa fa-phone fa-fw" /> (67) 3423-9804
-                  </li>
-                  <li>
                     <i className="fa fa-envelope-o fa-fw" />{" "}
                     <a href="mailto:avivamentoshalom@gmail.com">
                       avivamentoshalom@gmail.com
@@ -82,7 +79,7 @@ const Footer = () => {
                 </ul>
                 <hr className="small" />
                 <p className="text-muted">
-                  Site desde 2017 - última atualização 04/08/2021 às 10h por{" "}
+                  Site desde 2017 - última atualização 06/03/2022 às 19h por{" "}
                   <a
                     href="http://tgmarinho.com"
                     target="_blank"
