@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import Fade from "react-reveal/Fade";
-import toast, { Toaster } from 'react-hot-toast';
+import {toast} from 'react-toast';
 
 const url = "https://avivamentoshalom.com";
 const message = "Copiado com sucesso!";
@@ -35,7 +35,6 @@ const Footer = () => {
 
   return (
     <Fragment>
-      <Toaster />
       <Fade>
         <footer>
           <div className="container">

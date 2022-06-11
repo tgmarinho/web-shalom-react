@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
-import toast, { Toaster } from 'react-hot-toast';
+import {toast} from 'react-toast';
 
 const url = "https://avivamentoshalom.com";
 const message = "Copiado com sucesso!";
@@ -38,7 +38,6 @@ const NavBar = () => {
 
   return (
     <div>
-      <Toaster />
       <header className="cabecalhoPrincipal">
         <div className="container">
           <h1 className="cabecalhoPrincipal-titulo">
