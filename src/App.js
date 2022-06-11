@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div>
         <Routes />
-        <ToastContainer />
+        <ToastContainer delay={3000} />
       </div>
     );
   }

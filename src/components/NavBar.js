@@ -6,7 +6,9 @@ import {toast} from 'react-toast';
 const url = "https://avivamentoshalom.com";
 const message = "Copiado com sucesso!";
 
-const notify = () => toast.success(message);
+const notify = () => toast(message, {
+  position: "bottom-center",
+});
 
 const copy = (content) => {
     navigator.clipboard.writeText(content);
