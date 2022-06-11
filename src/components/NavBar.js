@@ -1,10 +1,44 @@
 import React from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
+import toast, { Toaster } from 'react-hot-toast';
+
+const url = "https://avivamentoshalom.com";
+const message = "Copiado com sucesso!";
+
+const notify = () => toast.success(message);
+
+const copy = (content) => {
+    navigator.clipboard.writeText(content);
+    notify()      
+}
+
+  const shareLink = (e) => {
+    if (navigator.canShare) {
+       navigator.share({
+            url,
+            title: "Shalom",
+            text: "Acesse o site da Igreja Batista do Avivamento Shalom"
+        })
+        .then(() => { console.log("Shared"); })
+        .catch((error) => { copy(url) });
+    
+    } else {
+      navigator.clipboard.writeText(url);
+        copy(url)      
+    }
+
+  }
 
 const NavBar = () => {
+
+
+
+
+
   return (
     <div>
+      <Toaster />
       <header className="cabecalhoPrincipal">
         <div className="container">
           <h1 className="cabecalhoPrincipal-titulo">
@@ -47,6 +81,9 @@ const NavBar = () => {
             >
               Vamos cantar
             </Link>
+            <a className="cabecalhoPrincipal-nav-link" href="javascript:void(0);" onClick={shareLink}>
+                  <i className="fa fa-share-alt fa-fw fa-1x" />
+            </a>
           </nav>
         </div>
       </header>

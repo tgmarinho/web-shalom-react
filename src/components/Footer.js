@@ -1,9 +1,41 @@
 import React, { Fragment } from "react";
 import Fade from "react-reveal/Fade";
+import toast, { Toaster } from 'react-hot-toast';
+
+const url = "https://avivamentoshalom.com";
+const message = "Copiado com sucesso!";
+
+const notify = () => toast.success(message);
+
+const copy = (content) => {
+    navigator.clipboard.writeText(content);
+    notify()      
+}
 
 const Footer = () => {
+
+  const shareLink = (e) => {
+    if (navigator.canShare) {
+       navigator.share({
+            url,
+            title: "Shalom",
+            text: "Acesse o site da Igreja Batista do Avivamento Shalom"
+        })
+        .then(() => { console.log("Shared"); })
+        .catch((error) => { copy(url) });
+    
+    } else {
+      navigator.clipboard.writeText(url);
+        copy(url)      
+    }
+
+  }
+  
+  
+
   return (
     <Fragment>
+      <Toaster />
       <Fade>
         <footer>
           <div className="container">
@@ -38,10 +70,10 @@ const Footer = () => {
                   Conta: 11.494-4
                   <br />
                   PIX/CNPJ:{" "}
-                  <a href="#">
+                  <a href="javascript:void(0);">
                     <span
                       onClick={() =>
-                        navigator.clipboard.writeText("03549481000187")
+                        copy("03549481000187")
                       }
                     >
                       03.549.481/0001-87
@@ -76,10 +108,15 @@ const Footer = () => {
                       <i className="fa fa-youtube fa-fw fa-3x" />
                     </a>
                   </li>
+                   <li onClick={shareLink}>
+                     <a  href="javascript:void(0);">
+                      <i className="fa fa-share-alt fa-fw fa-3x" />
+                    </a>
+                  </li>
                 </ul>
                 <hr className="small" />
                 <p className="text-muted">
-                  Site desde 2017 - última atualização 06/03/2022 às 19h por{" "}
+                  Site desde 2017 - última atualização 11/06/2022 às 12h por{" "}
                   <a
                     href="http://tgmarinho.com"
                     target="_blank"
