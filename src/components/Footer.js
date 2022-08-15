@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import Fade from "react-reveal/Fade";
 import {toast} from 'react-toast';
 
-const url = "https://avivamentoshalom.com";
+const url = "https://avivashalom.com";
 const message = "Copiado com sucesso!";
 
 const notify = () => toast(message, {
