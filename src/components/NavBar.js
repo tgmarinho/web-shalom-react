@@ -3,7 +3,7 @@ import "./NavBar.css";
 import { Link } from "react-router-dom";
 import {toast} from 'react-toast';
 
-const url = "https://avivamentoshalom.com";
+const url = "https://avivashalom.com";
 const message = "Copiado com sucesso!";
 
 const notify = () => toast(message, {
